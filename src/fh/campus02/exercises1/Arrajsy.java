@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.exercises1;
 
 import java.util.Arrays;
 

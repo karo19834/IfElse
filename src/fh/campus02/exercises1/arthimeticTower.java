@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.exercises1;
 
 public class arthimeticTower {
     public static void main(String[] args) {
