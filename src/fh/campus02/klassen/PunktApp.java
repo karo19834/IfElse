@@ -1,6 +1,6 @@
 package fh.campus02.klassen;
 
-public class FlaechenApp {
+public class PunktApp {
     public static void main(String[] args) {
         Punkt a = new Punkt();
         Punkt b = new Punkt();

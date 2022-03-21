@@ -1,6 +1,6 @@
 package fh.campus02.klassen;
 
-public class QuaderMain {
+public class QuaderApp {
     public static void main(String[] args) {
         Quader a = new Quader();
 

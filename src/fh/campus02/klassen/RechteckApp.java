@@ -1,6 +1,6 @@
 package fh.campus02.klassen;
 
-public class RechteckMain {
+public class RechteckApp {
     public static void main(String[] args) {
         Rechteck a= new Rechteck();
         Rechteck b = new Rechteck();

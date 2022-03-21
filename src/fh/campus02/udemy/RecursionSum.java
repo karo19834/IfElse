@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.udemy;
 
 public class RecursionSum {
     public static void main(String[] args) {
