@@ -50,5 +50,5 @@ public class ArrayTest2 {
     // quartalnr: für welches quartal soll berechnet werden ( zwischen 1-4)- sonst rückgabe leere string
    // public static String erfolgreichsteSmartphoneQuartal ( int [][] zahlen, String[] namen, int quartalNr){
 
-   // }
+    //}
 }
