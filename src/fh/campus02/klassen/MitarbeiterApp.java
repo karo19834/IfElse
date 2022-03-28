@@ -5,8 +5,11 @@ public class MitarbeiterApp {
         Mitarbeiter cde = new Mitarbeiter();
         cde.monatsGehalt = 3400;
 
+        System.out.println( cde.monatsAbrechnung());
+        System.out.println( cde.jahresAbrechnung());
 
-        //System.out.println( cde.monatsAbrechnung(cde.monatsGehalt));
+
+        ;
 
 
     }
