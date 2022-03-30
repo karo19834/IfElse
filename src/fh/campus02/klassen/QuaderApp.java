@@ -2,9 +2,15 @@ package fh.campus02.klassen;
 
 public class QuaderApp {
     public static void main(String[] args) {
-        Quader a = new Quader();
+        Quader q = new Quader();
+        q.breit=2.3;
+        q.lang =4.0;
+        q.hoch =2.1;
 
-        System.out.println( a.Volumen( 2,4,7));
-        System.out.println( a.Flaeche( 4,6,2));
+        System.out.println( q.volumen( ));
+        System.out.println( q.oberflaeche( ));
+        System.out.println(q.grundflaeche());
+        q.skaliere( 10);
+        System.out.println(q.grundflaeche());
     }
 }

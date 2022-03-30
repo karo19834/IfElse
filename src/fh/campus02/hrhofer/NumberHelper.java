@@ -2,7 +2,7 @@ package fh.campus02.hrhofer;
 
 import java.util.Arrays;
 
-public class umberHelper {
+public class NumberHelper {
     public static void main(String[] args) {
 
         int[][] numbers = new int[][]{{0, 1, 9,2}, {6, 3, 2}};

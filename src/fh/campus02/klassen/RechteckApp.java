@@ -2,13 +2,14 @@ package fh.campus02.klassen;
 
 public class RechteckApp {
     public static void main(String[] args) {
-        Rechteck a= new Rechteck();
-        Rechteck b = new Rechteck();
+        Rechteck a = new Rechteck();
+        a.laenge = 45.0;
+        a.hoehe = 32.0;
 
-
-        System.out.println( a.Flaeche(3.4,4.6));
-
-        System.out.println( b.Umfang(12.7,56.9));
+        System.out.println(a.flaeche());
+        System.out.println(a.umfang());
+        a.skaliere(0.5);
+        System.out.println(a.flaeche());
 
     }
 }

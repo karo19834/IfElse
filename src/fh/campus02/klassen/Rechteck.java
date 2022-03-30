@@ -5,10 +5,17 @@ public class Rechteck {
     double laenge;
 
 
-    public double Flaeche(double hoehe, double laenge) {
-        return hoehe*laenge;
+    public double flaeche() {
+
+        return hoehe * laenge;
     }
-    public double  Umfang ( double hoehe, double laenge){
-        return (2*hoehe)+(2*laenge);
+
+    public double umfang() {
+        return (2 * hoehe) + (2 * laenge);
+    }
+
+    public void skaliere(double factor) {
+        laenge *= factor;
+        hoehe *= factor;
     }
 }
