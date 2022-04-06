@@ -2,15 +2,17 @@ package fh.campus02.klassen;
 
 public class MitarbeiterApp {
     public static void main(String[] args) {
-        Mitarbeiter cde = new Mitarbeiter();
-        cde.monatsGehalt = 3400;
+        Mitarbeiter nr1 = new Mitarbeiter();
 
-        System.out.println( cde.monatsAbrechnung());
-        System.out.println( cde.jahresAbrechnung());
+        nr1.vorname = "Hansi";
+        nr1.nachname = "Hinterseer";
+        nr1.alter = 50;
+        nr1.gehalt = 2333.33;
 
-
-        ;
-
-
+        System.out.println(nr1.gehalt * 12);
+        System.out.println(nr1.monatsAbrechnung());
     }
+
+
 }
+

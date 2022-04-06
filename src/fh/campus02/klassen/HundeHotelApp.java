@@ -5,8 +5,8 @@ public class HundeHotelApp {
         Hund czarek = new Hund();
 
 
-        czarek.name = "Roxi";
-        czarek.allergien = { "Milch","Hühnerfleisch", "Ente"};
+//        czarek.name = "Roxi";
+//        czarek.allergien = { "Milch","Hühnerfleisch", "Ente"};
 
         //System.out.println( czarek.h);
 

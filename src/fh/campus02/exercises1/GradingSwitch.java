@@ -5,14 +5,14 @@ public class GradingSwitch {
         System.out.println(getGradeText(1));
     }
 
-    public static String getGradeText (int grade) {
+    public static String getGradeText(int grade) {
         return switch (grade) {
-            case 1 ->  "Outstanding";
-            case 2 ->  "Excellent";
-            case 3 ->  "Acceptable";
-            case 4 ->  "Passing";
-            case 5 ->  "Fail";
-            default ->  null;
+            case 1 -> "Outstanding";
+            case 2 -> "Excellent";
+            case 3 -> "Acceptable";
+            case 4 -> "Passing";
+            case 5 -> "Fail";
+            default -> null;
 
 
         };

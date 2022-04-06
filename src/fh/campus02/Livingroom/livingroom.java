@@ -8,5 +8,6 @@ public class livingroom {
         bookcase bookcase_ = new bookcase( 8,"Classic", new book []{orwell1984, annaKarenina});
 
         bookcase_.store();
+
     }
 }

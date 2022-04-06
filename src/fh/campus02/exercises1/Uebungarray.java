@@ -17,10 +17,11 @@ public class Uebungarray {
             }
         }
     }
-    public static boolean containsNumber ( int number, int[] array) {
+
+    public static boolean containsNumber(int number, int[] array) {
         boolean isContained = false;
         for (int i = 0; i < array.length; i++) {
-            if (number == array[1]) {
+            if (number == array[i]) {
                 isContained = true;
             } else {
                 isContained = false;

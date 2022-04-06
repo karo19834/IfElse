@@ -14,7 +14,7 @@ public class WinterTires {
     }
 
     public static boolean needWinterTires(int temperatur, boolean slipperyRoad) {
-        if (temperatur < 4 || temperatur < 10 && slipperyRoad) {
+        if ((temperatur < 4) || (temperatur < 10 && slipperyRoad)) {
             return true;
         } else {
             return false;

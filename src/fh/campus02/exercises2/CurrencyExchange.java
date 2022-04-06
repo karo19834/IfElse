@@ -3,7 +3,7 @@ package fh.campus02.exercises2;
 public class CurrencyExchange {
     public static void main(String[] args) {
 
-        System.out.println(exchangeCurrency("CAD", 100));
+        System.out.println(exchangeCurrency("CAD", 89));
 
     }
 

@@ -2,40 +2,39 @@ package fh.campus02.klassen;
 
 public class Mitarbeiter {
 
-    String vornameMitarbeiter;
-    String nachnameMitarbeiter;
-    double monatsGehalt;
+    String vorname;
+    String nachname;
+    double gehalt;
     int alter;
 
     public double monatsAbrechnung() {
-        double monatsGehaltAbrechnung;
-
-        monatsGehaltAbrechnung = (monatsGehalt * 12) * 0.8;
-
-//        if (monatsGehaltAbrechnung <= 10000) {
-//            monatsGehaltAbrechnung * 0.9;
-//        } else if (monatsGehaltAbrechnung > 10000 && monatsGehaltAbrechnung <= 20000) {
-//            monatsGehaltAbrechnung * 0.8;
-//        } else if (monatsGehaltAbrechnung > 20000 && monatsGehaltAbrechnung <= 30000) {
-//            monatsGehaltAbrechnung * 0.68;
-//        } else if (monatsGehaltAbrechnung > 30000 && monatsGehaltAbrechnung <= 50000) {
-//            monatsGehaltAbrechnung * 0.55;
-//        } else if (monatsGehaltAbrechnung > 50000) {
-//            monatsGehaltAbrechnung * 0.4;
-//        }
-        return monatsGehaltAbrechnung / 12;
-
-
+        return jahresAbrechnung() / 12;
     }
 
     public double jahresAbrechnung() {
-        double jaresEinkommen;
+        double neuesGehalt = gehalt * 12;
+        neuesGehalt *= 0.8; // SV
 
-        jaresEinkommen = monatsGehalt * 12;
+        double nochAbzurechnen = neuesGehalt;
 
-        return jaresEinkommen;
+        if (nochAbzurechnen > 50000) {
+            neuesGehalt -= (nochAbzurechnen - 50000) * 0.6;
+            nochAbzurechnen = 50000;
+        }
+        if (nochAbzurechnen > 30000) {
+            neuesGehalt -= (nochAbzurechnen - 30000) * 0.45;
+            nochAbzurechnen = 30000;
+        }
+        if (nochAbzurechnen > 20000) {
+            neuesGehalt -= (nochAbzurechnen - 20000) * 0.32;
+            nochAbzurechnen = 20000;
+        }
+        if (nochAbzurechnen > 10000) {
+            neuesGehalt -= (nochAbzurechnen - 10000) * 0.2;
+            nochAbzurechnen = 10000;
+        }
+        neuesGehalt -= nochAbzurechnen * 0.1;
 
+        return neuesGehalt;
     }
-
-
 }

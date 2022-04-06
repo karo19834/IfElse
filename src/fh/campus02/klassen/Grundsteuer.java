@@ -11,5 +11,5 @@ public class Grundsteuer {
         }
         return grundsteuer;
     }
-
+//Lösung passt nicht
 }
